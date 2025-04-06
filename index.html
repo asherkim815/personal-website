@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asher's Website</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <article>
+          <h2>Intro</h2>
+          <h1>I'm Asher Kim. Welcome to my page.</h1>
+          <p class="email">
+            asherkim815@gmail.com
+            <img
+              class="clipboard"
+              src="images/clipboard.svg"
+              alt="clipboard svg"
+            />
+          </p>
+          <ul>
+            <li>Full-stack (or back end) web dev, entry-level</li>
+            <li>Can use React, Node, Express, Passport, Postgres, etc.</li>
+            <li>Born and living in Seoul, South Korea</li>
+            <li>Open to employer's reqs (learn new stacks, relocate, etc.)</li>
+            <li>More info in resume and portfolio</li>
+          </ul>
+        </article>
+
+        <article>
+          <h2>Resume</h2>
+          <a href="https://asherkim815.github.io/resume/" target="_blank">
+            <button>Open in New Tab</button>
+          </a>
+          <a href="download/resume-asher-kim.pdf" download>
+            <button>Download</button>
+          </a>
+        </article>
+      </section>
+
+      <section class="portfolio">
+        <h2>Portfolio</h2>
+        <article>
+          <figure>
+            <a
+              href="https://github.com/asherkim815/TinDog-modified"
+              target="_blank"
+            >
+              <img src="images/TinDog-screenshot.jpg" alt="TinDog screenshot" />
+            </a>
+            <figcaption>
+              <div>
+                <a
+                  href="https://github.com/asherkim815/TinDog-modified"
+                  target="_blank"
+                >
+                  <button>Open Repo</button>
+                </a>
+                <a
+                  href="https://asherkim815.github.io/TinDog-modified/"
+                  target="_blank"
+                >
+                  <button>Open Site</button>
+                </a>
+              </div>
+              <strong> HTML, CSS, JavaScript</strong>
+              <br />
+              Reponsive website introducing TinDog, Tinder for dogs.
+            </figcaption>
+          </figure>
+        </article>
+
+        <article>
+          <figure>
+            <a
+              href="https://github.com/asherkim815/TinDog-modified"
+              target="_blank"
+            >
+              <img src="images/TinDog-screenshot.jpg" alt="TinDog screenshot" />
+            </a>
+            <figcaption>
+              <div>
+                <a
+                  href="https://github.com/asherkim815/TinDog-modified"
+                  target="_blank"
+                >
+                  <button>Open Repo</button>
+                </a>
+                <a
+                  href="https://asherkim815.github.io/TinDog-modified/"
+                  target="_blank"
+                >
+                  <button>Open Site</button>
+                </a>
+              </div>
+              <strong> HTML, CSS, JavaScript</strong>
+              <br />
+              Reponsive website introducing TinDog, Tinder for dogs.
+            </figcaption>
+          </figure>
+        </article>
+      </section>
+    </main>
+    <script>
+      document.querySelector('.email').addEventListener('click', () => {
+        navigator.clipboard.writeText('asherkim815@gmail.com');
+        document.querySelector('.clipboard').src = 'images/clipboard-check.svg';
+        setTimeout(() => {
+          document.querySelector('.clipboard').src = 'images/clipboard.svg';
+        }, 3000);
+      });
+    </script>
+  </body>
+</html>
