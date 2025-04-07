@@ -23,7 +23,7 @@ section {
   flex-wrap: wrap;
 }
 
-section.portfolio-section article {
+section#portfolio article {
   margin-bottom: 32px;
 }
 
@@ -32,7 +32,7 @@ article {
 }
 
 h2 {
-  padding: 64px 0 16px;
+  margin: 64px 0 16px;
 }
 
 h2.portfolio-title {
@@ -57,12 +57,12 @@ button:hover {
 }
 
 button.portfolio-button {
-  padding: 4px;
   margin: 0 2px 0 0;
+  padding: 4px;
 }
 
 p.email {
-  padding-block: 8px;
+  margin-block: 8px;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -83,7 +83,7 @@ a {
 }
 
 ul {
-  padding-left: 30px;
+  margin-left: 30px;
 }
 
 @media (max-width: 1034px) {
