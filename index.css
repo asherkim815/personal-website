@@ -23,8 +23,11 @@ section {
   flex-wrap: wrap;
 }
 
-article {
+section.portfolio-section article {
   margin-bottom: 32px;
+}
+
+article {
   width: 500px;
 }
 
