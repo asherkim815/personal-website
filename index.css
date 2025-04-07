@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-/* write media query */
-
 * {
   margin: 0;
   padding: 0;
@@ -9,21 +7,14 @@
 }
 
 :root {
-  --main-full-width: 1025px;
-  --main-gap: 25px;
-  --main-half-width: calc((var(--main-full-width) - var(--main-gapgap)) / 2);
-  line-height: 150%;
   font-family: 'Inter', sans-serif;
+  line-height: 150%;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-}
-
-main,
-.portfolio > h2 {
-  width: var(--main-full-width);
+main {
+  max-width: 1056px;
+  margin: auto;
+  padding: 0 10px;
 }
 
 section {
@@ -33,24 +24,28 @@ section {
 }
 
 article {
+  margin-bottom: 32px;
   width: 500px;
 }
 
 h2 {
-  margin-top: 75px;
-  padding-bottom: 16px;
+  padding: 64px 0 16px;
+}
+
+h2.portfolio-title {
+  width: 100%;
 }
 
 button {
-  margin: 0 8px 0 0;
+  margin: 0 8px 8px 0;
   padding: 16px;
-  font-size: 16px;
-  border-radius: 6px;
   border: 1px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: 'Inter';
   background-color: black;
   color: white;
   cursor: pointer;
-  font-family: 'Inter';
 }
 
 button:hover {
@@ -58,25 +53,13 @@ button:hover {
   color: black;
 }
 
-.portfolio button {
-  padding: 6px;
-  margin: 0 3px 6px 0;
+button.portfolio-button {
+  padding: 4px;
+  margin: 0 2px 0 0;
 }
 
-a {
-  text-decoration: none;
-}
-
-img {
-  width: 100%;
-}
-
-ul {
-  padding-left: 30px;
-}
-
-.email {
-  margin-block: 8px;
+p.email {
+  padding-block: 8px;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -84,12 +67,24 @@ ul {
   cursor: pointer;
 }
 
-.email > img {
+p.email > img.clipboard {
   width: 20px;
 }
 
-@media (max-width: 500px) {
-  main {
-    width: 300px;
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 30px;
+}
+
+@media (max-width: 1034px) {
+  article {
+    width: 100%;
   }
 }
