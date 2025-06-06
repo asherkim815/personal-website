@@ -4,25 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Asher's Website</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="/index.css" />
   </head>
   <body>
     <main>
-      <section>
+      <section id="intro-and-resume">
         <article>
           <h2>Intro</h2>
           <h1>I'm Asher Kim. Welcome to my page.</h1>
-          <p class="email">
+          <p>
             asherkim815@gmail.com
-            <img
-              class="clipboard"
-              src="images/clipboard.svg"
-              alt="clipboard svg"
-            />
+            <img src="/images/clipboard.svg" alt="clipboard svg" />
           </p>
           <ul>
-            <li>Full-stack (or back end) web dev, entry-level</li>
-            <li>Can use React, Node, Express, Passport, Postgres, etc.</li>
+            <li>Full-stack web developer, JavaScript-based, entry-level</li>
+            <li>Willing to work server-side-only, but not client-side-only</li>
+            <li>Can use:</li>
+            <ul>
+              <li>(FE) React</li>
+              <li>
+                (BE) Node—express, express-session (cookie), passport
+                (authentication), pg (Postgres), connect-pg-simple (saving
+                session data in Postgres), etc.
+              </li>
+              <li>(DB) PostgreSQL</li>
+            </ul>
             <li>Born and living in Seoul, South Korea</li>
             <li>Open to employer's reqs (learn new stacks, relocate, etc.)</li>
             <li>More info in resume and portfolio</li>
@@ -34,14 +40,14 @@
           <a href="https://asherkim815.github.io/resume/" target="_blank">
             <button>Open in New Tab</button>
           </a>
-          <a href="download/resume-asher-kim.pdf" download>
+          <a href="/download/resume-asher-kim.pdf" download>
             <button>Download in PDF</button>
           </a>
         </article>
       </section>
 
       <section id="portfolio">
-        <h2 class="portfolio-title">Portfolio</h2>
+        <h2>Portfolio</h2>
         <article>
           <figure>
             <a
@@ -49,7 +55,7 @@
               target="_blank"
             >
               <img
-                src="images/tic-tac-toe-screenshot.jpg"
+                src="/images/tic-tac-toe-screenshot.jpg"
                 alt="tic-tac-toe screenshot"
               />
             </a>
@@ -59,16 +65,16 @@
                   href="https://github.com/asherkim815/tic-tac-toe-modified"
                   target="_blank"
                 >
-                  <button class="portfolio-button">Open Repo</button>
+                  <button>Open Repo</button>
                 </a>
                 <a
                   href="https://asherkim815.github.io/tic-tac-toe-modified/"
                   target="_blank"
                 >
-                  <button class="portfolio-button">Open App</button>
+                  <button>Open App</button>
                 </a>
               </div>
-              <strong>React, Vite</strong>
+              <strong>Tic-Tac-Toe // React, Vite</strong>
               <br />
               Updated version of React documentation's tic-tac-toe tutorial
             </figcaption>
@@ -82,7 +88,7 @@
               target="_blank"
             >
               <img
-                src="images/weather-now-screenshot.jpg"
+                src="/images/weather-now-screenshot.jpg"
                 alt="weather now screenshot"
               />
             </a>
@@ -92,10 +98,10 @@
                   href="https://github.com/asherkim815/weather-now"
                   target="_blank"
                 >
-                  <button class="portfolio-button">Open Repo</button>
+                  <button>Open Repo</button>
                 </a>
               </div>
-              <strong>EJS, Node.js, Express</strong>
+              <strong>Weather Now // EJS, Node, Express</strong>
               <br />
               Simple weather API app
             </figcaption>
@@ -109,7 +115,7 @@
               target="_blank"
             >
               <img
-                src="images/permalist-screenshot.jpg"
+                src="/images/permalist-screenshot.jpg"
                 alt="permalist screenshot"
               />
             </a>
@@ -119,14 +125,15 @@
                   href="https://github.com/asherkim815/permalist-modified"
                   target="_blank"
                 >
-                  <button class="portfolio-button">Open Repo</button>
+                  <button>Open Repo</button>
                 </a>
               </div>
-              <strong>EJS, Node.js, Express, Passport, PostgreSQL</strong>
+              <strong
+                >Permalist // EJS, Node, Express, Passport, Postgres</strong
+              >
               <br />
-              To-do list app which, upon authenticating (with email or OAuth
-              2.0), saves in and loads from database to-do items. Tried to
-              deploy on Vercel, but sadly it doesn't seem to support ejs.
+              To-do list that uses authentication (email & OAuth) and database.
+              Tried to deploy on Vercel, but it doesn't seem to support EJS.
             </figcaption>
           </figure>
         </article>
@@ -138,7 +145,7 @@
               target="_blank"
             >
               <img
-                src="images/family-travel-tracker-screenshot.jpg"
+                src="/images/family-travel-tracker-screenshot.jpg"
                 alt="family travel tracker screenshot"
               />
             </a>
@@ -148,12 +155,15 @@
                   href="https://github.com/asherkim815/family-travel-tracker-modified"
                   target="_blank"
                 >
-                  <button class="portfolio-button">Open Repo</button>
+                  <button>Open Repo</button>
                 </a>
               </div>
-              <strong>EJS, Node.js, Express, PostgreSQL</strong>
+              <strong
+                >Family travel tracker // EJS, Node, Express, Postgres</strong
+              >
               <br />
-              Family travel tracker, with users and countries saved in database
+              App for tracking each family member's visited countries. Users and
+              visited countries saved in database.
             </figcaption>
           </figure>
         </article>
@@ -164,7 +174,10 @@
               href="https://github.com/asherkim815/TinDog-modified"
               target="_blank"
             >
-              <img src="images/TinDog-screenshot.jpg" alt="TinDog screenshot" />
+              <img
+                src="/images/TinDog-screenshot.jpg"
+                alt="TinDog screenshot"
+              />
             </a>
             <figcaption>
               <div>
@@ -172,18 +185,18 @@
                   href="https://github.com/asherkim815/TinDog-modified"
                   target="_blank"
                 >
-                  <button class="portfolio-button">Open Repo</button>
+                  <button>Open Repo</button>
                 </a>
                 <a
                   href="https://asherkim815.github.io/TinDog-modified/"
                   target="_blank"
                 >
-                  <button class="portfolio-button">Open Site</button>
+                  <button>Open Site</button>
                 </a>
               </div>
-              <strong>HTML, CSS, JavaScript</strong>
+              <strong>TinDog // HTML, CSS, JavaScript</strong>
               <br />
-              Website with a simple css-animated background
+              Website with simple css-animated background
             </figcaption>
           </figure>
         </article>

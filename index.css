@@ -24,10 +24,6 @@ section {
   flex-wrap: wrap;
 }
 
-section#portfolio article {
-  margin-bottom: 32px;
-}
-
 article {
   width: 500px;
 }
@@ -36,8 +32,16 @@ h2 {
   margin: 64px 0 16px;
 }
 
-h2.portfolio-title {
+img {
   width: 100%;
+}
+
+ul {
+  margin-left: 30px;
+}
+
+a {
+  text-decoration: none;
 }
 
 button {
@@ -57,12 +61,8 @@ button:hover {
   color: black;
 }
 
-button.portfolio-button {
-  margin: 0 2px 0 0;
-  padding: 4px;
-}
-
-p.email {
+/* sectional css applications */
+#intro-and-resume p {
   margin-block: 8px;
   display: flex;
   align-items: center;
@@ -71,20 +71,21 @@ p.email {
   cursor: pointer;
 }
 
-p.email > img.clipboard {
+#intro-and-resume img {
   width: 20px;
 }
 
-img {
+#portfolio article {
+  margin-bottom: 32px;
+}
+
+#portfolio h2 {
   width: 100%;
 }
 
-a {
-  text-decoration: none;
-}
-
-ul {
-  margin-left: 30px;
+#portfolio button {
+  margin: 0 2px 0 0;
+  padding: 4px;
 }
 
 @media (max-width: 1034px) {
