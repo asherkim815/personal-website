@@ -21,16 +21,26 @@
             <li>Willing to work server-side-only, but not client-side-only</li>
             <li>Can use:</li>
             <ul>
-              <li>(FE) React</li>
+              <li>[Language] TypeScript (learning), JavaScript, HTML, CSS</li>
+              <li>[Full-Stack] Next.js (learning)</li>
+              <li>[Front-End] React</li>
               <li>
-                (BE) Node—express, express-session (cookie), passport
-                (authentication), pg (Postgres), connect-pg-simple (saving
-                session data in Postgres), etc.
+                [Back-End] Node.js
+                <ul>
+                  <li>express</li>
+                  <li>express-session (cookie)</li>
+                  <li>pg (Postgres)</li>
+                  <li>connect-pg-simple (saving session data in Postgres)</li>
+                  <li>passport (authentication including OAuth 2.0)</li>
+                  <li>bcrypt, crypto (hashing & salting)</li>
+                  <li>axios (api)</li>
+                  <li>etc.</li>
+                </ul>
               </li>
-              <li>(DB) PostgreSQL</li>
+              <li>[Database] PostgreSQL</li>
             </ul>
-            <li>Born and living in Seoul, South Korea</li>
             <li>Open to employer's reqs (learn new stacks, relocate, etc.)</li>
+            <li>Born and living in Seoul, South Korea</li>
             <li>More info in resume and portfolio</li>
           </ul>
         </article>
@@ -40,7 +50,7 @@
           <a href="https://asherkim815.github.io/resume/" target="_blank">
             <button>Open in New Tab</button>
           </a>
-          <a href="/download/resume-asher-kim.pdf" download>
+          <a href="download/resume-asher-kim.pdf" download>
             <button>Download in PDF</button>
           </a>
         </article>
@@ -200,13 +210,17 @@
       </section>
     </main>
     <script>
-      document.querySelector('.email').addEventListener('click', () => {
-        navigator.clipboard.writeText('asherkim815@gmail.com');
-        document.querySelector('.clipboard').src = 'images/clipboard-check.svg';
-        setTimeout(() => {
-          document.querySelector('.clipboard').src = 'images/clipboard.svg';
-        }, 3000);
-      });
+      document
+        .querySelector('#intro-and-resume p')
+        .addEventListener('click', () => {
+          navigator.clipboard.writeText('asherkim815@gmail.com');
+          document.querySelector('#intro-and-resume img').src =
+            'images/clipboard-check.svg';
+          setTimeout(() => {
+            document.querySelector('#intro-and-resume img').src =
+              'images/clipboard.svg';
+          }, 3000);
+        });
     </script>
   </body>
 </html>
